@@ -1,8 +1,13 @@
+
 $main-font: 'Lato', sans-serif;
 header {
   text-align: center;
   .intro {
-    margin-top: 20px;
+    z-index: 200;
+    bottom: 50px;
+    margin-top: 50px;
+    left: 0;
+    right: 0;
     h1 {
       color: white;
       display: inline;
@@ -38,15 +43,16 @@ header {
     .controls {
       background-image: none;
       background-color: transparent;
-      margin-top: 220px;
+      margin-top: 310px;
       span {
         font-size: 50px;
-        font-family: $main-font;
       }
     }
   }
   .menu{
-    margin-top: -480px;
+    position: relative;
+    margin-bottom: -340px;
+    z-index: 200;
     nav{
       background-image: none;
       background-color: transparent;
@@ -54,7 +60,7 @@ header {
       box-shadow: none;
       border-radius: 0;
       margin-top: 30px;
-      margin-bottom: 80px;
+      margin-bottom: 0px;
       .main-menu{
         .main-list{
           li{
@@ -69,13 +75,13 @@ header {
               color: #8fbb7b;
             }
           }.active-1 {
-          a {
-            color: #8fbb7b;
-            background-color: transparent;
-            background-image: none;
-            border: none;
-            box-shadow: none;
-          }
+             a {
+               color: #8fbb7b;
+               background-color: transparent;
+               background-image: none;
+               border: none;
+               box-shadow: none;
+             }
            }
         }
         .search{
@@ -94,13 +100,13 @@ header {
   }
 }
 .logo{
-    margin-left: 15px;
-    text-align: left;
-    a {
-      font-family: 'Pacifico', cursive;
-      font-size: 52px;
-      color: white;
-    }
+  margin-left: 15px;
+  text-align: left;
+  a {
+    font-family: 'Pacifico', cursive;
+    font-size: 52px;
+    color: white;
+  }
   .ico{
     text-align: right;
     ul{
@@ -297,30 +303,32 @@ footer {
   }
   .footer-bottom{
     margin-top: 50px;
-    .copyright{
-      text-align: left;
-      padding-left: 40px;
-      h2{
-        color: gray;
-        display: inline;
-        font-size: 16px;
-      }
-      span{
-        color: white;
-        font-size: 16px;
-        text-transform: uppercase;
-      }
-    }
-    .about{
-      text-align: right;
-      a{
-        font-size: 16px;
-        color: gray;
-        text-transform: uppercase;
-      }
-      span{
-        color: gray;
-      }
-    }
+  }
+}
+.copyright{
+  text-align: left;
+  padding-left: 40px;
+  padding-top: 30px;
+  h2{
+    color: gray;
+    display: inline;
+    font-size: 16px;
+  }
+  span{
+    color: white;
+    font-size: 16px;
+    text-transform: uppercase;
+  }
+}
+.about{
+  text-align: right;
+  padding-top: 30px;
+  a{
+    font-size: 16px;
+    color: gray;
+    text-transform: uppercase;
+  }
+  span{
+    color: gray;
   }
 }

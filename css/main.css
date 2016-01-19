@@ -1,7 +1,11 @@
 header {
   text-align: center; }
   header .intro {
-    margin-top: 20px; }
+    z-index: 200;
+    bottom: 50px;
+    margin-top: 50px;
+    left: 0;
+    right: 0; }
     header .intro h1 {
       color: white;
       display: inline;
@@ -30,12 +34,13 @@ header {
   header .slider .controls {
     background-image: none;
     background-color: transparent;
-    margin-top: 220px; }
+    margin-top: 310px; }
     header .slider .controls span {
-      font-size: 50px;
-      font-family: "Lato", sans-serif; }
+      font-size: 50px; }
   header .menu {
-    margin-top: -480px; }
+    position: relative;
+    margin-bottom: -340px;
+    z-index: 200; }
     header .menu nav {
       background-image: none;
       background-color: transparent;
@@ -43,7 +48,7 @@ header {
       box-shadow: none;
       border-radius: 0;
       margin-top: 30px;
-      margin-bottom: 80px; }
+      margin-bottom: 0px; }
       header .menu nav .main-menu .main-list li {
         padding-right: 12px; }
         header .menu nav .main-menu .main-list li a {
@@ -233,24 +238,28 @@ footer {
       padding: 5px 10px 5px 10px; }
   footer .footer-bottom {
     margin-top: 50px; }
-    footer .footer-bottom .copyright {
-      text-align: left;
-      padding-left: 40px; }
-      footer .footer-bottom .copyright h2 {
-        color: gray;
-        display: inline;
-        font-size: 16px; }
-      footer .footer-bottom .copyright span {
-        color: white;
-        font-size: 16px;
-        text-transform: uppercase; }
-    footer .footer-bottom .about {
-      text-align: right; }
-      footer .footer-bottom .about a {
-        font-size: 16px;
-        color: gray;
-        text-transform: uppercase; }
-      footer .footer-bottom .about span {
-        color: gray; }
+
+.copyright {
+  text-align: left;
+  padding-left: 40px;
+  padding-top: 30px; }
+  .copyright h2 {
+    color: gray;
+    display: inline;
+    font-size: 16px; }
+  .copyright span {
+    color: white;
+    font-size: 16px;
+    text-transform: uppercase; }
+
+.about {
+  text-align: right;
+  padding-top: 30px; }
+  .about a {
+    font-size: 16px;
+    color: gray;
+    text-transform: uppercase; }
+  .about span {
+    color: gray; }
 
 /*# sourceMappingURL=main.css.map */
